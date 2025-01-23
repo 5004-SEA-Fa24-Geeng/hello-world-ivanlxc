@@ -2,7 +2,7 @@
 
 **Github Account name: ivanlxc**
 
-**Link to Assignment on Github: https://github.com/5004-SEA-Fa24-Geeng/hello-world-ivanlxc.git** 
+**Link to Assignment on Github:  https://github.com/5004-SEA-Fa24-Geeng/hello-world-ivanlxc.git** 
 
 How many hours did it take you to complete this assignment (estimate)?
 

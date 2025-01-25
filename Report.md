@@ -48,12 +48,9 @@ classDiagram
 ```
 
 
-
-
-
-
 ### Program Flow
 Write a short paragraph detailing the flow of the program in your own words. This is to help you understand / trace the code (and give you practice of something called a code walk that will be required in this course).
+
 
 
 ## Assignment Questions

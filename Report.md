@@ -51,7 +51,7 @@ classDiagram
 ### Program Flow
 Write a short paragraph detailing the flow of the program in your own words. This is to help you understand / trace the code (and give you practice of something called a code walk that will be required in this course).
 
-
+> AlohaWorld is the "Driver" of the program, it only contain the main method and is the start of the entire program. It initiates the ConsoleView class to collect user input including name and locality, view the greeting, and determine whether to continue and loops until user inputs “no”. The Greeter class is used to generate the greeting message, and then the greeting message is going to be shown in the ConsoleView.
 
 ## Assignment Questions
 

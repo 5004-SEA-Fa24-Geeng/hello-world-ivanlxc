@@ -76,9 +76,69 @@ public class Greeting {
         return this.localityID;
     }
 
+    /**
+     * Returns the locality name.
+     * @return the locality name
+     */
+    public String getLocalityName() {
+        return this.localityName;
+    }
+
+    /**
+     * Returns the ascii greeting. Just the greeting, no formatting.
+     * @return the ascii greeting
+     */
+    public String getAsciiGreeting() {
+        return this.asciiGreeting;
+    }
+
+    /**
+     * Returns the unicode greeting. Just the greeting, no formatting.
+     * @return the unicode greeting
+     */
+    public String getUnicodeGreeting() {
+        return this.unicodeGreeting;
+    }
 
 
+    /**
+     * Gets the unicode format string. This string will have a %s, so that the name can be inserted into the greeting in the correct location.
+     * @return the format string with the greeting inserted into the format
+     */
+    public String getFormatStr() {
+        return String.format(this.formatStr, this.unicodeGreeting);
+    }
 
 
+    /**
+     *Returns the format string with the greeting inserted into the format. This string will have a %s, so that the name can be inserted into the greeting in the correct location.
+     * An example use is as follows
+     *
+     *  Greeting g = new Greeting(2, "English");
+     *  // later in code
+     *  String name = "Alice";
+     *  String greet = String.format(g.getFormatStr(false), name);
+     *  System.out.println(greet); // Hello, Alice!
+     *
+     * @param asciiOnly if true, only ascii characters will be used
+     * @return the format string with the greeting inserted into the format
+     */
+    public String getFormatStr(boolean asciiOnly) {
+        if (asciiOnly) {
+            return String.format(this.formatStr, this.asciiGreeting);
+        } else {
+            return String.format(this.formatStr, this.unicodeGreeting);
+        }
+    }
 
+    /**
+     * Returns the full greeting details as a string. Primarily for debugging purposes. Example string format:
+     *  {localityID:1, localityName:"Hawaii", asciiGreeting:"Aloha", unicodeGreeting:"Aloha"}
+     * @return full greeting details as a string
+     */
+    @Override
+    public String toString() {
+        return String.format("{localityID:%d, localityName:\"%s\", asciiGreeting:\"%s\", unicodeGreeting:\"%s\"}",
+                this.localityID, this.localityName, this.asciiGreeting, this.unicodeGreeting);
+    }
 }

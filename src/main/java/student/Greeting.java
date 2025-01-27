@@ -43,7 +43,7 @@ public class Greeting {
     public Greeting(int localityID,
                     String localityName,
                     String greeting) {
-        this(localityID, localityName, greeting, greeting,"%s, %%s!" );
+        this(localityID, localityName, greeting, greeting, "%s, %%s!");
     }
 
 

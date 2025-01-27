@@ -16,7 +16,6 @@ Did you use any external resources (you do not have to cite in class material)? 
 * https://www.markdownguide.org/cheat-sheet/
 * https://github.com/adam-p/markdown-here/wiki/markdown-cheatsheet#headers
 
-
 (Optional) What was your favorite part of the assignment?
 
 (Optional) How would you improve the assignment?
